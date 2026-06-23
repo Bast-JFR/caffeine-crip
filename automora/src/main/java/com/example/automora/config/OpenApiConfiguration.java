@@ -1,0 +1,32 @@
+package com.example.automora.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Contact;
+import io.swagger.v3.oas.models.info.Info;
+
+@Configuration
+public class OpenApiConfiguration {
+    @Value("${app.version}")
+    private String version;
+
+
+    @Bean
+    public OpenAPI OpenApiConfiguration(){
+        return new OpenAPI()
+            .info(new Info()
+            .title("Gestion de Marcas de Vehiculos.")
+            .version(version)
+            .description("C.R.U.D. y buscador de Marcas.")
+            .contact(new Contact()
+                .email("gia.jaque@profesor.duoc.cl")
+                .name("Giancarlo Jaque")
+                .url("google.cl")
+            )
+        );
+    }
+
+}

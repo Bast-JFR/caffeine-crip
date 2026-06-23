@@ -1,0 +1,31 @@
+###### Agregar marca
+POST http://127.0.0.1:8080/marca HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombreMarca":"Primera marca"
+}
+
+###### Obtener todas las Marcas
+GET http://127.0.0.1:8080/marca HTTP/1.1
+Content-Type: application/json
+
+
+###### Obtener marca por id
+GET http://127.0.0.1:8080/marca/4 HTTP/1.1
+Content-Type: application/json
+
+###### Actualizar Marca
+PUT  http://127.0.0.1:8080/marca HTTP/1.1
+Content-Type: application/json
+
+{
+    "idMarca":4,
+    "nombreMarca":"Tercera marca"
+}
+
+###### Eliminar Marca
+DELETE  http://127.0.0.1:8080/marca/4 HTTP/1.1
+Content-Type: application/json
+
+
