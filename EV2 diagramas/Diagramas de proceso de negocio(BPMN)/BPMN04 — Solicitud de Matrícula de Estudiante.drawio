@@ -1,0 +1,201 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="Página-1" id="YncaNH2qFOwrowq-K52H">
+    <mxGraphModel dx="1042" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=15;fontStyle=1;fontColor=#FFFFFF;" value="BPMN04 — Solicitud de Matrícula de Estudiante" vertex="1">
+          <mxGeometry height="30" width="1350" x="40" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="L1" parent="1" style="swimlane;startSize=100;fillColor=#002800;strokeColor=#00E676;fontColor=#00E676;fontSize=12;fontStyle=1;horizontal=0;" value="Apoderado" vertex="1">
+          <mxGeometry height="185" width="1350" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S0" parent="L1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#00E676;strokeColor=#00BF63;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="35" width="35" x="113" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="S0L" parent="L1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#00E676;" value="Inicio" vertex="1">
+          <mxGeometry height="15" width="65" x="98" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="T1" parent="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#004400;strokeColor=#00E676;fontColor=#FFFFFF;fontSize=10;" value="Accede al módulo de Matrícula" vertex="1">
+          <mxGeometry height="45" width="130" x="190" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T2" parent="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#004400;strokeColor=#00E676;fontColor=#FFFFFF;fontSize=10;" value="Completa datos del estudiante y apoderado" vertex="1">
+          <mxGeometry height="45" width="130" x="490" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T3" parent="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3A0000;strokeColor=#FF5252;fontColor=#FFFFFF;fontSize=10;" value="Corrige datos inválidos" vertex="1">
+          <mxGeometry height="45" width="130" x="820" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E0" parent="L1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FF5252;strokeColor=#D32F2F;strokeWidth=3;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="35" width="35" x="1260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0L" parent="L1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#FF5252;" value="Fin" vertex="1">
+          <mxGeometry height="15" width="65" x="1245" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eS0T1" edge="1" parent="L1" source="S0" style="endArrow=block;endFill=1;strokeColor=#00E676;strokeWidth=1.5;" target="T1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eT1T2" edge="1" parent="L1" source="T1" style="endArrow=block;endFill=1;strokeColor=#00E676;strokeWidth=1.5;" target="T2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2" parent="1" style="swimlane;startSize=100;fillColor=#1A0A2E;strokeColor=#9C27B0;fontColor=#CE93D8;fontSize=12;fontStyle=1;horizontal=0;" value="Sistema&#xa;React + Spring Boot" vertex="1">
+          <mxGeometry height="245" width="1350" x="40" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="T4a" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2D1B4E;strokeColor=#9C27B0;fontColor=#FFFFFF;fontSize=10;" value="Carga formulario de matrícula" vertex="1">
+          <mxGeometry height="45" width="130" x="155" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="T4b" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2D1B4E;strokeColor=#9C27B0;fontColor=#FFFFFF;fontSize=10;" value="Muestra formulario de matrícula" vertex="1">
+          <mxGeometry height="45" width="130" x="310" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eT4aT4b" edge="1" parent="L2" source="T4a" style="endArrow=block;endFill=1;strokeColor=#9C27B0;strokeWidth=1.5;" target="T4b" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G1" parent="L2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#2A1F00;strokeColor=#FFB300;fontColor=#FFB300;fontSize=9;" value="¿Datos válidos?" vertex="1">
+          <mxGeometry height="80" width="110" x="590" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="eT4bG1" edge="1" parent="L2" source="T4b" style="endArrow=block;endFill=1;strokeColor=#9C27B0;strokeWidth=1.5;" target="G1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T5a" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2D1B4E;strokeColor=#9C27B0;fontColor=#FFFFFF;fontSize=10;" value="Verifica RUT del estudiante" vertex="1">
+          <mxGeometry height="45" width="130" x="730" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="T5b" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2D1B4E;strokeColor=#9C27B0;fontColor=#FFFFFF;fontSize=10;" value="Registra solicitud de matrícula" vertex="1">
+          <mxGeometry height="45" width="130" x="880" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eT5aT5b" edge="1" parent="L2" source="T5a" style="endArrow=block;endFill=1;strokeColor=#9C27B0;strokeWidth=1.5;" target="T5b" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eG1T5a" edge="1" parent="L2" source="G1" style="endArrow=block;endFill=1;strokeColor=#00E676;fontColor=#00E676;fontSize=10;strokeWidth=1.5;labelBackgroundColor=none;" target="T5a" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G2" parent="L2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#2A1F00;strokeColor=#FFB300;fontColor=#FFB300;fontSize=9;" value="¿Registrado exitoso?" vertex="1">
+          <mxGeometry height="80" width="110" x="1040" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="eT5bG2" edge="1" parent="L2" source="T5b" style="endArrow=block;endFill=1;strokeColor=#9C27B0;strokeWidth=1.5;" target="G2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#003A00;strokeColor=#00E676;fontColor=#FFFFFF;fontSize=10;" value="Muestra confirmación con número de folio" vertex="1">
+          <mxGeometry height="45" width="130" x="1180" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eG2T6" edge="1" parent="L2" source="G2" style="endArrow=block;endFill=1;strokeColor=#00E676;fontColor=#00E676;fontSize=10;strokeWidth=1.5;labelBackgroundColor=none;" target="T6" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T7" parent="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3A0000;strokeColor=#FF5252;fontColor=#FF8A80;fontSize=10;" value="Muestra error de registro" vertex="1">
+          <mxGeometry height="45" width="130" x="880" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="eG2T7" edge="1" parent="L2" source="G2" style="endArrow=block;endFill=1;strokeColor=#FF5252;fontColor=#FF5252;fontSize=10;strokeWidth=1.5;labelBackgroundColor=none;" target="T7" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="200" />
+              <mxPoint x="1010" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT7T5b" edge="1" parent="L2" source="T7" style="endArrow=block;endFill=1;dashed=1;strokeColor=#FF5252;fontColor=#FF5252;fontSize=9;strokeWidth=1.5;labelBackgroundColor=none;" target="T5b" value="Reintenta">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="945" y="178" />
+              <mxPoint x="945" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L3" parent="1" style="swimlane;startSize=100;fillColor=#0A0A14;strokeColor=#546E7A;fontColor=#90A4AE;fontSize=12;fontStyle=1;horizontal=0;" value="Base de Datos&#xa;PostgreSQL" vertex="1">
+          <mxGeometry height="130" width="1350" x="40" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="BD1" parent="L3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1A1A2E;strokeColor=#546E7A;fontColor=#FFFFFF;fontSize=10;" value="SELECT cursos disponibles" vertex="1">
+          <mxGeometry height="45" width="130" x="155" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="BD2" parent="L3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1A1A2E;strokeColor=#546E7A;fontColor=#FFFFFF;fontSize=10;" value="INSERT solicitud + notificación al Director" vertex="1">
+          <mxGeometry height="45" width="130" x="880" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="eT1T4a" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#00E676;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="175" as="sourcePoint" />
+            <mxPoint x="260" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT4aBD1" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#9C27B0;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="390" as="sourcePoint" />
+            <mxPoint x="260" y="533" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eBD1T4b" edge="1" parent="1" style="endArrow=block;endFill=1;dashed=1;strokeColor=#546E7A;fontColor=#90A4AE;fontSize=9;strokeWidth=1.5;labelBackgroundColor=none;" value="Retorna datos">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="555" />
+              <mxPoint x="415" y="390" />
+            </Array>
+            <mxPoint x="325" y="555" as="sourcePoint" />
+            <mxPoint x="415" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT4bT2" edge="1" parent="1" style="endArrow=block;endFill=1;dashed=1;strokeColor=#9C27B0;fontColor=#CE93D8;fontSize=9;strokeWidth=1.5;labelBackgroundColor=none;" value="Muestra formulario">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="595" y="345" />
+            </Array>
+            <mxPoint x="415" y="345" as="sourcePoint" />
+            <mxPoint x="595" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT2G1" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#00E676;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="685" y="175" />
+              <mxPoint x="685" y="327" />
+            </Array>
+            <mxPoint x="595" y="175" as="sourcePoint" />
+            <mxPoint x="685" y="327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eG1T3" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#FF5252;fontColor=#FF5252;fontSize=10;strokeWidth=1.5;labelBackgroundColor=none;" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="367" />
+              <mxPoint x="590" y="192" />
+            </Array>
+            <mxPoint x="630" y="367" as="sourcePoint" />
+            <mxPoint x="870" y="192" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT3G1" edge="1" parent="1" source="T3" style="endArrow=block;endFill=1;dashed=1;strokeColor=#FF5252;fontColor=#FF5252;fontSize=9;strokeWidth=1.5;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="Reintenta">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="925" y="245" />
+              <mxPoint x="805" y="245" />
+              <mxPoint x="685" y="245" />
+              <mxPoint x="685" y="327" />
+            </Array>
+            <mxPoint x="805" y="215" as="sourcePoint" />
+            <mxPoint x="685" y="327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT5bBD2" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#9C27B0;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="985" y="390" as="sourcePoint" />
+            <mxPoint x="985" y="533" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eBD2G2" edge="1" parent="1" style="endArrow=block;endFill=1;dashed=1;strokeColor=#546E7A;fontColor=#90A4AE;fontSize=9;strokeWidth=1.5;labelBackgroundColor=none;" value="Resultado">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1135" y="555" />
+              <mxPoint x="1135" y="407" />
+            </Array>
+            <mxPoint x="1050" y="555" as="sourcePoint" />
+            <mxPoint x="1135" y="407" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT6E0" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#00E676;strokeWidth=1.5;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1317" y="345" />
+            </Array>
+            <mxPoint x="1285" y="345" as="sourcePoint" />
+            <mxPoint x="1317" y="152" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
